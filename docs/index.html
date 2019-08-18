@@ -2,17 +2,96 @@
 <html>
 <head>
 	<title>PNG Image Classification</title>
+	<script type="text/javascript" src="./main.js"></script>
 </head>
 <body>
 	<section class="container">
 		<header>
-			<h1>PNG Image Classification</h1>
+			<h1>PNG Image Classification <br><small><a href="https://github.com/vishal-pandey/png-image-classification/" target="_blank" style="font-size: 14px; text-decoration: none; color: black;">Github</a></small><br></h1>
 		</header>
+		<section class="problem">
+			<h2>Problem Statement :- </h2>
+			<p>
+				The dataset comprises of images of different geometries categorized into 4 classes. We need to perform image classification on it.
+			</p>
+		</section>
+		<section class="dataset images">
+			<div class="cat category1">
+				<h3>Category 1</h3>
+			</div>
+			<div class="cat category2">
+				<h3>Category 2</h3>
+			</div>
+			<div class="cat category3">
+				<h3>Category 3</h3>
+			</div>
+			<div class="cat category4">
+				<h3>Category 4</h3>
+			</div>
+		</section>
+		<section class="code">
+			<h2>Solution :- </h2>
+			<iframe src="https://vishal-pandey.github.io/png-image-classification/code/final.html" style="border: 0; width: 100%; height: 700px;"></iframe>
+		</section>
+		<footer>
+			<a href="https://www.vishalpandey.xyz/" target="_blank">Copyright &copy; 2019 Vishal Pandey</a>
+		</footer>
 	</section>
 </body>
 </html>
 <style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+	}
+	*{
+		box-sizing: border-box;
+	}
 	h1{
 		text-align: center;
+	}
+	.container{
+		max-width: 1000px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.dataset{
+		width: 100%;
+		height: 500px;
+		overflow-y: scroll;
+		border: 1px solid black;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center; 
+	}
+	.dataset .cat{
+		width: 25%;
+		height: 500px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		/*flex-direction: column;*/
+		/*border: 1px solid red;*/
+		height: 100%;
+		overflow-y: scroll;
+		position: relative;
+		flex-wrap: wrap;
+	}
+	.cat h3{
+		width: 100%;
+		text-align: center;
+	}
+	footer{
+		width: 100%;
+		height: 100px;
+		color: black;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	footer a{
+		color: black;
+		text-decoration: none;
+		/*font-size: 20px;*/
 	}
 </style>
